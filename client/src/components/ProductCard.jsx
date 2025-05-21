@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 
 export default function ProductCard({ imageUrl, productName, price, tag, discountLabel = "-20%" }) {
   return (
@@ -12,6 +13,9 @@ export default function ProductCard({ imageUrl, productName, price, tag, discoun
         <h3 className="text-lg font-semibold">{productName}</h3>
         <p className="text-gray-800 font-medium mt-1">{price}</p>
         <span className="text-sm text-muted-foreground mt-1 block">{tag}</span>
+        <Button variant="ghost" className="mt-4 w-full bg-blue-100 text-blue-700 rounded-md hover:bg-blue-200">
+          Add to Cart
+        </Button>
       </CardContent>
     </Card>
   );
