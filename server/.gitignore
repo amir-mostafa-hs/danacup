@@ -1,0 +1,19 @@
+# Mac Stuff
+.DS_Store
+.idea/
+
+# Virtual Environment
+venv/
+
+# database
+db.sqlite3
+
+# migration
+*/migrations
+
+# static files 
+media/
+
+# environment variables
+.env
+docker.env
