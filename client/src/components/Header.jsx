@@ -8,8 +8,8 @@ const navLinks = [
   { to: "/shop", label: "Shop" },
   { to: "/help", label: "Help" },
   { to: "/cart", label: "Cart" },
-  { to: "/login", label: "Login" },
-  { to: "/register", label: "Register" },
+  { to: "/auth/login", label: "Login" },
+  { to: "/auth/register", label: "Register" },
 ];
 
 const Header = () => {
@@ -20,7 +20,7 @@ const Header = () => {
       <div className="container mx-auto flex items-center justify-between py-4 px-4">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 font-bold text-xl">
-          <span className="bg-black text-white rounded px-2 py-1">Logo</span>
+          <span className="bg-black text-white rounded px-2 py-1">CodeSy</span>
         </Link>
 
         {/* Desktop Nav */}
