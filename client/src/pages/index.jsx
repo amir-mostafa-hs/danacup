@@ -1,10 +1,10 @@
 import Home from "./Home";
-import Help from "./Help";
+import About from "./About";
 import Shop from "./Shop";
 import ShopItem from "./ShopItem";
-import Register from "./Register";
-import Login from "./Login";
+import LoginRegister from "./Auth";
 import Cart from "./Cart";
 import Checkout from "./Checkout";
+import Profile from "./Profile";
 
-export { Home, Help, Shop, ShopItem, Register, Login, Cart, Checkout };
+export { Home, About, Shop, ShopItem, LoginRegister, Cart, Checkout, Profile };

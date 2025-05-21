@@ -6,10 +6,9 @@ import { Link } from "react-router-dom";
 const navLinks = [
   { to: "/", label: "Home" },
   { to: "/shop", label: "Shop" },
-  { to: "/help", label: "Help" },
+  { to: "/about", label: "About" },
   { to: "/cart", label: "Cart" },
-  { to: "/auth/login", label: "Login" },
-  { to: "/auth/register", label: "Register" },
+  { to: "/auth", label: "Login/Register" },
 ];
 
 const Header = () => {

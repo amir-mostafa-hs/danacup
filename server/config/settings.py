@@ -38,13 +38,7 @@ SECRET_KEY = env_vars.get(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env_vars.get("DEBUG", "True") == "True"
 
-# CORS settings
 ALLOWED_HOSTS = ["*"]
-CORS_ALLOW_ALL_ORIGINS = True
-# CORS_ALLOWED_ORIGINS = [
-#     "http://localhost:3000",
-# ]
-
 
 # Application definition
 
@@ -63,6 +57,7 @@ INSTALLED_APPS = [
     # local apps
     "users",
     "shop",
+    "admin_api",
 ]
 
 MIDDLEWARE = [
@@ -190,3 +185,17 @@ SIMPLE_JWT = {
     "BLACKLIST_AFTER_ROTATION": True,
     "AUTH_HEADER_TYPES": ("Bearer",),
 }
+
+
+# CORS settings
+
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ORIGIN_WHITELIST = [
+    "http://localhost:5173",
+]
+
+# CORS_ORIGIN_ALLOW_ALL = True
+
+# CORS_ALLOW_ALL_ORIGINS = True
+# CORS_ALLOWED_ORIGINS = [
+#     "http://localhost:5173",# ]
