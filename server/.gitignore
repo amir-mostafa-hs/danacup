@@ -15,5 +15,5 @@ db.sqlite3
 media/
 
 # environment variables
-.env
-docker.env
+# .env
+# docker.env
