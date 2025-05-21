@@ -26,23 +26,23 @@ services:
     volumes:
       - ./pg_servers/servers.json:/pgadmin4/servers.json
 
-  danacup_backend:
-    build:
-      context: ../server
-      dockerfile: Dockerfile
-    container_name: danacup_backend
-    restart: always
-    volumes:
-      - static_volume:/app/static
-      - media_volume:/app/media
-    ports:
-      - "8000:8000"
-    env_file:
-      - ../server/docker.env
-    depends_on:
-      - danacup_db_postgresql
-    networks:
-      - danacup_app
+  # danacup_backend:
+  #   build:
+  #     context: ../server
+  #     dockerfile: Dockerfile
+  #   container_name: danacup_backend
+  #   restart: always
+  #   volumes:
+  #     - static_volume:/app/static
+  #     - media_volume:/app/media
+  #   ports:
+  #     - "8000:8000"
+  #   env_file:
+  #     - ../server/docker.env
+  #   depends_on:
+  #     - danacup_db_postgresql
+  #   networks:
+  #     - danacup_app
 
 volumes:
   danacup_db_postgresql:
